@@ -31,7 +31,7 @@ class Translator:
         self.source_language = source_language
         self.target_language = target_language
 
-        model_name = f"Helsinki-NLP/opus-mt-{source_language.value}-{target_language.value}"
+        model_name = f"Helsinki-NLP/opus-tatoeba-{source_language.value}-{target_language.value}"
 
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
