@@ -20,4 +20,4 @@ class AvailableLanguages(Enum):
     italian = "it"
     chinese = "zh"
     dutch = "nl"
-    turkish = "tr"
+    turkish = "trk"
